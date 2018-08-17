@@ -1,2 +1,2 @@
 # Robotics_New control
-QuadEOM_readonly, runsim and the code in the utility folder along with the maps were provided to us.Everything else is self implemented.
+Most of the code was provided to us in the form of skeletal code.However parts like the actual controller,snap trajectory generation,A* planner and dijkistra planner were implemented on our own..
