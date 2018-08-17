@@ -5,9 +5,7 @@ function [ desired_state ] = trajectory_generator(t, qn, map, path)
 % arguments. In init_script, it will be called with arguments
 % trajectory_generator([], [], map, path) and later, in test_trajectory,
 % it will be called with only t and qn as arguments, so your code should
-% be able to handle that. This can be done by checking the number of
-% arguments to the function using the "nargin" variable, check the
-% MATLAB documentation for more information.
+% be able to handle that. .
 %
 % map: The map structure returned by your load_map function
 % path: This is the path returned by your planner (dijkstra function)
@@ -15,9 +13,7 @@ function [ desired_state ] = trajectory_generator(t, qn, map, path)
 % desired_state: Contains all the information that is passed to the
 % controller, as in phase 2
 %
-% It is suggested to use "persistent" variables to store map and path
-% during the initialization call of trajectory_generator, e.g.
-% persistent map0 path0
+
 % map0 = map;
 % path0 = path;
 persistent map0 path0 total_time X ts;
@@ -61,7 +57,6 @@ end
 yaw = 0;
 yawdot = 0;
 
-% =================== Your code ends here ===================
 
 desired_state.pos = pos(:);
 desired_state.vel = vel(:);
