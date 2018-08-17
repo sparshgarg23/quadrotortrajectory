@@ -6,7 +6,6 @@ function [F, M, trpy, drpy] = controller(qd, t, qn, params)
 % qd{qn}.pos_des, qd{qn}.vel_des, qd{qn}.acc_des, qd{qn}.yaw_des, qd{qn}.yawdot_des
 % Using these current and desired states, you have to compute the desired controls
 
-% =================== Your code goes here ===================
 
 % ordinary linear
 % % position controller params
@@ -48,7 +47,6 @@ qd{qn}.acc_des(3);
 F  = params.mass*(params.grav + acc_des(3));
 % Moment
 M =  params.I*(KdM.*(pqr_des - qd{qn}.omega) + KpM.*(euler_des - qd{qn}.euler));
-% =================== Your code ends here ===================
 
 % Output trpy and drpy as in hardware
 trpy = [F, phi_des, theta_des, psi_des];
