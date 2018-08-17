@@ -1,8 +1,6 @@
 function X = traj_opt7(path, total_time, ts)
 % Minimum snap trajectory optimization
 % by solving 8m linear equations. Assumes constant speed
-% @author       Yiren Lu
-% @email        luyiren [at] seas [dot] upenn [dot] edu
 % 
 % @input:       path                (m+1) by 3 planning trajectory
 %               total_time          total time
