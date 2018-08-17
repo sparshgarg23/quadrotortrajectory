@@ -1,8 +1,6 @@
 function X = traj_opt3(path, total_time, ts)
 % 5th order trajectory optimization (minimum acceleration)
 % by solving 4m linear equations. Assumes constant speed
-% @author       Yiren Lu
-% @email        luyiren [at] seas [dot] upenn [dot] edu
 % 
 % @input:       path                (m+1) by 3 planning trajectory
 %               total_time          total time
