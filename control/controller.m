@@ -28,9 +28,9 @@ qd{qn}.acc_des(3);
 F  = params.mass*(params.grav + acc_des(3));
 % Moment
 M =  params.I*(KdM.*(pqr_des - qd{qn}.omega) + KpM.*(euler_des - qd{qn}.euler));
-% =================== Your code ends here ===================
 
-% Output trpy and drpy as in hardware
+
+
 trpy = [F, phi_des, theta_des, psi_des];
 drpy = [0, 0,       0,         0];
 
